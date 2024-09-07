@@ -1,8 +1,21 @@
 @import "_variables";
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 128px;
+    max-width: 1256px;
+    margin : 0 auto;
     &__image {
         align-items: center;
         justify-content: center;
@@ -12,6 +25,7 @@
         justify-content: center;
         align-items: center;
         gap: 32px;
+        list-style-type: none;
         &--link {
             font-size: 32px;
             line-height: 40px;
@@ -24,15 +38,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: $green;
+    &__header {
+        font-size: 56px;
+        text-align: center;
+    }
 }
 .advantages {
-    text-align: center;
+    max-width: 768px;
+    margin:0 auto;
     &__header {
         font-size: 48px;
+        text-align: center;
+    }
+    &__list {
+        font-size: 24px;
+
     }
 }
 
 .courses {
+    max-width: 1256px;
+    margin : 0 auto;
     &__header {
         font-size: 56px;
         text-align: center;
@@ -41,6 +67,21 @@
     &__type {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.contact {
+    &__header {
+        font-size: 56px;
+        text-align: center;
+    }
+    &__description {
+        font-size: 32px;
+        text-align: center;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
