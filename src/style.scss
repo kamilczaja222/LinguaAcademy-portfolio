@@ -1,14 +1,52 @@
+@import "_variables";
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navigation {
-
-    &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 128px;
+    &__image {
+        align-items: center;
+        justify-content: center;
+    }
+    &__nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 32px;
+        &--link {
+            font-size: 32px;
+            line-height: 40px;
+            text-decoration: none;
+        }
     }
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $green;
+}
+.advantages {
+    text-align: center;
+    &__header {
+        font-size: 48px;
+    }
+}
+
+.courses {
+    &__header {
+        font-size: 56px;
+        text-align: center;
+    }
+
+    &__type {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: $pink;
+    min-height: 256px;
 }

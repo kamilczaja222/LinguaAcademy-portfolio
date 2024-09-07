@@ -11,44 +11,43 @@
 
 <body>
     <header class="header">
-        <img class="header__image" src="#" alt="logo Lingua Academy">
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li><a href="#about">O nas</a></li>
-                <li><a href="#courses">Kursy</a></li>
-                <li><a href="#opinion">Opinie</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+        <img class="header__image" src="./images/logo_lingua.png" alt="logo Lingua Academy">
+        <nav>
+            <ul class="header__nav">
+                <li><a class="header__nav--link" href="#about">O nas</a></li>
+                <li><a class="header__nav--link" href="#courses">Kursy</a></li>
+                <li><a class="header__nav--link" href="#opinion">Opinie</a></li>
+                <li><a class="header__nav--link" href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="about" id="about">
-            <article>
-                <img class="about__image" src="#" alt="Zadowolony kursant">
+        <section id="about">
+            <article class="about">
+                <img class="about__image" src="./images/picture_child.png" alt="Zadowolony kursant">
                 <div>
-                    <h1>Angielski dla dzieci i młodzieży</h1>
-                    <p>Zarażamy naszą pasją do języka angielskiego. Dzięki nam Twoje dziecko przełamie barierę językową oraz
-                        zacznie
-                        używać angielskiego w codziennym życiu! Zajęcia z języka angielskiego prowadzone są dla dzieci oraz
-                        młodzieży w wieku przedszkolnym oraz szkolnym.
+                    <h1 class="about__header">Angielski dla dzieci i młodzieży</h1>
+                    <p class="about__description">Zarażamy naszą pasją do języka angielskiego. Dzięki nam Twoje dziecko przełamie barierę
+                        językową oraz zacznie używać angielskiego w codziennym życiu! Zajęcia z języka angielskiego prowadzone są dla dzieci
+                        oraz młodzieży w wieku przedszkolnym oraz szkolnym.
                     </p>
                     <a href="#contact">Contact</a>
                 </div>
             </article>
-            <article>
-                <h2>Zajęcia z języka angielskiego dla dzieci i młodzieży w Lingua Academy to:</h2>
-                <ul class=""></ul>
-                <li>pozytywne emocje</li>
-                <li>nauka poprzez zabawe</li>
-                <li>wykorzystanie wszystkich zmysłów</li>
-                <li>praca z tablicą interaktywną i aplikacjami</li>
-                <li>nauka samodzielnego uczenia</li>
+            <article class="advantages">
+                <h2 class="advantages__header">Zajęcia z języka angielskiego dla dzieci i młodzieży w Lingua Academy to:</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__list--element">pozytywne emocje</li>
+                    <li class="advantages__list--element">nauka poprzez zabawe</li>
+                    <li class="advantages__list--element">wykorzystanie wszystkich zmysłów</li>
+                    <li class="advantages__list--element">praca z tablicą interaktywną i aplikacjami</li>
+                    <li class="advantages__list--element">nauka samodzielnego uczenia</li>
                 </ul>
             </article>
         </section>
         <section class="courses" id="courses">
-            <h2>Jak uczymy w Lingua Academy</h2>
-            <div>
+            <h2 class="courses__header">Jak uczymy w Lingua Academy</h2>
+            <div class="courses__type">
                 <article>
                     <h3>Zajęcia grupowe</h3>
                     <p>Zajęcia grupowe z języka angielskiego prowadzone są dla uczniów szkół podstawowych i średnich.
@@ -70,11 +69,12 @@
             <a href="#contact">Skontaktuj się z nami</a>
         </section>
         <section class="opinions" id="#opinion">
-            <h2>Od 8 lat prowadzimy zajęcia z języka angielskiego dla dzieci i młodzieży. Poznaj opinie naszych klientów!</h2>
+            <h2 class="opinions__header">Od 8 lat prowadzimy zajęcia z języka angielskiego dla dzieci i młodzieży. Poznaj opinie
+                naszych klientów!</h2>
         </section>
         <section class="contact" id="#contact">
-            <h2>Skontaktuj się z nami aby zapisać się na zajęcia z języka angielskiego</h2>
-            <p>Pierwsze zajęcia to lekcja próbna więc nic nie ryzykujesz. Zapisz się już dziś!</p>
+            <h2 class="contact__header">Skontaktuj się z nami aby zapisać się na zajęcia z języka angielskiego</h2>
+            <p class="contact__desription">Pierwsze zajęcia to lekcja próbna więc nic nie ryzykujesz. Zapisz się już dziś!</p>
             <div>
                 <form>
 
@@ -89,14 +89,14 @@
                     <a class="card__link" href="#">Facebook</a>
                     <a class="card__link" href="#">Instagram</a>
                 </div>
-                </div>
+            </div>
                 </section>
     </main>
-    <footer>
-        <img class="header__image" src="#" alt="logo Lingua Academy">
-        <nav class="navigation">
-            <h2>Menu</h2>
-            <ul class="navigation__list">
+    <footer class="footer">
+        <img class="footer__image" src="./images/logo_lingua.png" alt="logo Lingua Academy">
+        <nav class="footer__nav">
+            <h2 class="footer__nav--header">Menu</h2>
+            <ul class="footer__list">
                 <li><a href="#about">O nas</a></li>
                 <li><a href="#courses">Kursy</a></li>
                 <li><a href="#opinion">Opinie</a></li>
@@ -125,6 +125,7 @@
         </article>
 
     </footer>
+    <script src="./main.js" type="module"></script>
 </body>
 
 </html>
