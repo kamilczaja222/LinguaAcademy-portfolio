@@ -15,7 +15,7 @@ body {
     grid-template-columns: 1fr 1fr;
     height: 128px;
     max-width: 1256px;
-    margin : 0 auto;
+    margin : 0 auto 16px;
     &__image {
         align-items: center;
         justify-content: center;
@@ -26,10 +26,12 @@ body {
         align-items: center;
         gap: 32px;
         list-style-type: none;
+        padding-top: 24px;
         &--link {
             font-size: 32px;
             line-height: 40px;
             text-decoration: none;
+            color: black;
         }
     }
 }
@@ -37,10 +39,26 @@ body {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: $green;
+    max-width: 1256px;
     &__header {
         font-size: 56px;
         text-align: center;
+    }
+    &__box {
+        background-color: $green;
+    }
+    &__description {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    &__button {
+        font-size: 32px;
+        line-height: 40px;
+        text-decoration: none;
+        color: black;
+        background-color: $pink;
+        padding: 8px;
+        border-radius: 32px;
     }
 }
 .advantages {
