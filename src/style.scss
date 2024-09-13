@@ -60,18 +60,24 @@ body {
         padding: 8px;
         border-radius: 32px;
     }
+    &__container {
+        padding-bottom: 32px;
+    }
 }
 .advantages {
     max-width: 768px;
     margin:0 auto;
+    border-bottom: 4px dashed;
+    border-bottom-color: $pink;
+    padding: 32px 4px;
     &__header {
         font-size: 48px;
         text-align: center;
     }
     &__list {
         font-size: 24px;
-
     }
+
 }
 
 .courses {
@@ -85,7 +91,26 @@ body {
     &__type {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        &--header {
+            font-size: 32px;
+        }
+        &--description {
+            font-size: 24px;
+        }
     }
+    &__box {
+        padding: 16px;
+    }
+    &__button {
+        font-size: 32px;
+        line-height: 40px;
+        text-decoration: none;
+        color: black;
+        background-color: $pink;
+        padding: 8px;
+        border-radius: 32px;
+    }
+
 }
 
 .contact {
