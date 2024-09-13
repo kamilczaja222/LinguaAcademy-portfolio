@@ -67,8 +67,7 @@ body {
 .advantages {
     max-width: 768px;
     margin:0 auto;
-    border-bottom: 4px dashed;
-    border-bottom-color: $pink;
+    border-bottom: 4px solid $pink;
     padding: 32px 4px;
     &__header {
         font-size: 48px;
@@ -83,6 +82,7 @@ body {
 .courses {
     max-width: 1256px;
     margin : 0 auto;
+    padding: 32px 0;
     &__header {
         font-size: 56px;
         text-align: center;
@@ -107,7 +107,7 @@ body {
         text-decoration: none;
         color: black;
         background-color: $pink;
-        padding: 8px;
+        padding: 16px;
         border-radius: 32px;
     }
 
