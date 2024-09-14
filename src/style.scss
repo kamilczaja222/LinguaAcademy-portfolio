@@ -149,6 +149,18 @@ body {
     }
 }
 
+.carousel {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    column-gap: 16px;
+    &__button {
+        padding: 16px;
+    }
+    &__opinions {
+        background-color: white;
+    }
+}
+
 .contact {
     max-width: 1256px;
     margin : 0 auto 64px;
