@@ -150,14 +150,30 @@ body {
 }
 
 .carousel {
-    display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
-    column-gap: 16px;
+    margin: 0 auto;
+    max-width: 1256px;
+    display: flex;
+    align-items: center;
+    &__box {
+        position: relative;
+        width: 100%;
+        height: 512px;
+    }
     &__button {
         padding: 16px;
+        margin: 0 16px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        border: 0;
     }
     &__opinions {
         background-color: white;
+        position: absolute;
+        inset: 0;
+        margin-bottom: 64px;
+        transform: translate3d(0, 0, 0);
+        transition: transform .5s ease-in-out;
     }
 }
 
