@@ -150,14 +150,22 @@ body {
 }
 
 .carousel {
-    margin: 0 auto;
-    max-width: 1256px;
+    width: 100%;
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
     &__box {
         position: relative;
-        width: 100%;
+        width: 1256px;
         height: 512px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        overflow: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
     }
     &__button {
         padding: 16px;
@@ -169,11 +177,11 @@ body {
     }
     &__opinions {
         background-color: white;
-        position: absolute;
         inset: 0;
         margin-bottom: 64px;
-        transform: translate3d(0, 0, 0);
-        transition: transform .5s ease-in-out;
+        padding: 16px;
+        scroll-snap-align: center;
+        min-width: 408px;
     }
 }
 

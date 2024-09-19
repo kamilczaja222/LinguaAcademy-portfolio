@@ -4,17 +4,15 @@ const opinionBox = document.querySelector('.carousel__opinions--js');
 const carouselBox = document.querySelector('.carousel__box--js');
 
 
-nextButton.addEventListener('click', e => {
-    const position = opinionBox.offsetWidth;
-    const translateValue = "translate3d(" + position + ", 0px, 0)";
-    opinionBox.style.transform = translateValue;
-    console.log(position);
+nextButton.addEventListener('click', () => {
+    const position = opinionBox.offsetWidth + 16;
+    carouselBox.scrollLeft += position;
+    console.log('next');
 })
 
-prevButton.addEventListener('click', e => {
-    const position = -(opinionBox.offsetWidth);
-    const translateValue = "translate3d(" + position + ", 0px, 0)";
-    opinionBox.style.transform = translateValue;
-    console.log(position)
+prevButton.addEventListener('click', () => {
+    const position = opinionBox.offsetWidth + 16;
+    carouselBox.scrollLeft -= position;
+    console.log('prev');
 })
 
