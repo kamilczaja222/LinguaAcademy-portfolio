@@ -1,0 +1,25 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: $pink;
+    min-height: 256px;
+    &__header {
+        font-size: 32px;
+    }
+    &__nav {
+        list-style-type: none;
+        padding: 0;
+        &--link {
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    &__description {
+        font-size: 16px;
+        &--link {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.social {
+    &__header {
+        font-size: 32px;
+        text-align: center;
+    }
+    &__box {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 16px;
+        &--icon {
+
+        }
+        &--description {
+            font-size: 32px;
+        }
+    }
+    &__link {
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+        padding-right: 32px;
+    }
+}

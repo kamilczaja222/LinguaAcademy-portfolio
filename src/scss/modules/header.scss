@@ -1,0 +1,25 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 128px;
+    max-width: 1256px;
+    margin : 0 auto 16px;
+    &__image {
+        align-items: center;
+        justify-content: center;
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        list-style-type: none;
+        padding-top: 24px;
+        &--link {
+            font-size: 32px;
+            line-height: 40px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
