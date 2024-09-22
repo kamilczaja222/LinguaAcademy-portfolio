@@ -2,23 +2,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    max-width: 1256px;
-    &__header {
-        font-size: 56px;
-        text-align: center;
-    }
+    max-width: $desktop;
     &__box {
         background-color: $green;
+        width: 100%;
+    }
+    &__header {
+        font-size: $heading1;
+        text-align: center;
     }
     &__description {
-        font-size: 32px;
-        line-height: 32px;
+        font-size: $text1;
+        line-height: 2.5rem;
     }
     &__button {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: $text1;
+        line-height: 2.5rem;
         text-decoration: none;
-        color: black;
+        color: $black;
         background-color: $pink;
         padding: 8px;
         border-radius: 32px;

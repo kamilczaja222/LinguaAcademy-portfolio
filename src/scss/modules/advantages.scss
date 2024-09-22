@@ -4,18 +4,17 @@
     border-bottom: 4px solid $pink;
     padding: 32px 4px;
     &__header {
-        font-size: 48px;
+        font-size: $heading2;
         text-align: center;
     }
     &__list {
-        font-size: 24px;
+        font-size: $text2;
         list-style: none;
-        &--image {
-            padding-right: 8px;
-        }
-        &--element {
-            padding: 8px;
-        }
     }
-
+    &--image {
+        padding-right: 8px;
+    }
+    &--element {
+        padding: 8px;
+    }
 }

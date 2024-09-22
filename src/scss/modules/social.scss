@@ -1,6 +1,6 @@
 .social {
     &__header {
-        font-size: 32px;
+        font-size: $text1;
         text-align: center;
     }
     &__box {
@@ -11,13 +11,13 @@
 
         }
         &--description {
-            font-size: 32px;
+            font-size: $text1;
         }
     }
     &__link {
-        font-size: 24px;
+        font-size: $text2;
         text-decoration: none;
-        color: black;
+        color: $black;
         padding-right: 32px;
     }
 }

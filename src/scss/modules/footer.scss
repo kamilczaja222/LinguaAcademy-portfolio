@@ -3,23 +3,24 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: $pink;
     min-height: 256px;
+    width: 100%;
     &__header {
-        font-size: 32px;
+        font-size: $text1;
     }
     &__nav {
         list-style-type: none;
         padding: 0;
         &--link {
-            font-size: 16px;
+            font-size: 1rem;
             text-decoration: none;
-            color: black;
+            color: $black;
         }
     }
     &__description {
-        font-size: 16px;
+        font-size: 1rem;
         &--link {
             text-decoration: none;
-            color: black;
+            color: $black;
         }
     }
 }

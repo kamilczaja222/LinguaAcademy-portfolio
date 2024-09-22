@@ -1,0 +1,23 @@
+.contact {
+    max-width: $desktop;
+    margin : 0 auto 64px;
+    &__header {
+        font-size: $heading1;
+        text-align: center;
+    }
+    &__description {
+        &--box {
+            display: flex;
+            justify-content: center;
+        }
+        font-size: $text1;
+        min-width: 256px;
+        padding-bottom: 4px;
+        margin-bottom: 32px;
+        border-bottom: 4px dotted $pink;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

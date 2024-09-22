@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 128px;
-    max-width: 1256px;
+    max-width: $desktop;
     margin : 0 auto 16px;
+    background-color: $white;
     &__image {
         align-items: center;
         justify-content: center;
@@ -16,10 +17,10 @@
         list-style-type: none;
         padding-top: 24px;
         &--link {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: $text1;
+            line-height: 2.5rem;
             text-decoration: none;
-            color: black;
+            color: $black;
         }
     }
 }

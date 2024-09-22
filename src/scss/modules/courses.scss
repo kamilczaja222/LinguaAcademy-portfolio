@@ -1,44 +1,43 @@
 .courses {
-    max-width: 1256px;
+    max-width: $desktop;
     margin : 0 auto;
     padding: 32px 0;
-    &__header {
-        font-size: 56px;
+    &__heading {
+        font-size: $heading1;
         text-align: center;
     }
-
+    &--header {
+        font-size: $text1;
+    }
+    &--image {
+        padding: 8px;
+    }
+    &--description {
+        font-size: $text2;
+    }
     &__type {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        &--header {
-            font-size: 32px;
-        }
-        &--description {
-            font-size: 24px;
-        }
-        &--image {
-            padding: 8px;
-        }
     }
     &__box {
         padding: 16px;
-        &--header {
-            display: flex;
-            justify-content: center;
-        }
+    }
+    &__boxHeader {
+        display: flex;
+        justify-content: center;
     }
     &__button {
-        &--box {
-            display: flex;
-            justify-content: center;
-        }
-        font-size: 32px;
-        line-height: 40px;
+        font-size: $text1;
+        line-height: 2.5rem;
         text-decoration: none;
-        color: black;
+        color: $black;
         background-color: $pink;
         padding: 16px;
         border-radius: 32px;
+    }
+    &__buttonBox {
+        display: flex;
+        justify-content: center;
     }
 
 }
