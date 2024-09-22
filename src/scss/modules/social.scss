@@ -7,12 +7,9 @@
         display: flex;
         justify-content: flex-start;
         column-gap: 16px;
-        &--icon {
-
-        }
-        &--description {
-            font-size: $text1;
-        }
+    }
+    &__description {
+        font-size: $text1;
     }
     &__link {
         font-size: $text2;
