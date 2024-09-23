@@ -12,7 +12,6 @@
         justify-content: space-between;
         align-items: center;
         overflow: hidden;
-        grid-auto-flow: column;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
     }
@@ -34,6 +33,7 @@
         scroll-snap-align: center;
         min-height: 256px;
         min-width: 400px;
+        border-radius: 8px;
     }
 }
 
