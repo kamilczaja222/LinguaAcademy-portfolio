@@ -5,13 +5,13 @@ const carouselBox = document.querySelector('.carousel__box--js');
 
 
 nextButton.addEventListener('click', () => {
-    const position = opinionBox.offsetWidth + 16;
+    const position = opinionBox.offsetWidth;
     carouselBox.scrollLeft += position;
     console.log('next');
 })
 
 prevButton.addEventListener('click', () => {
-    const position = opinionBox.offsetWidth + 16;
+    const position = opinionBox.offsetWidth;
     carouselBox.scrollLeft -= position;
     console.log('prev');
 })

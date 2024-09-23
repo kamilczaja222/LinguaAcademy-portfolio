@@ -1,18 +1,18 @@
 .carousel {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     &__box {
+        margin: 0 auto;
         position: relative;
         width: $desktop;
-        height: 512px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 16px;
-        overflow: auto;
+        overflow: hidden;
+        grid-auto-flow: column;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
     }
@@ -23,14 +23,17 @@
         display: flex;
         align-items: center;
         border: 0;
+        background-color: transparent;
     }
     &__opinions {
         background-color: $white;
         inset: 0;
         margin-bottom: 64px;
         padding: 16px;
+        margin: 16px;
         scroll-snap-align: center;
-        min-width: 408px;
+        min-height: 256px;
+        min-width: 400px;
     }
 }
 
