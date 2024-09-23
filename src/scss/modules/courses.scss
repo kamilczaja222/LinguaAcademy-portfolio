@@ -6,13 +6,13 @@
         font-size: $heading1;
         text-align: center;
     }
-    &--header {
+    &__header {
         font-size: $text1;
     }
-    &--image {
+    &__image {
         padding: 8px;
     }
-    &--description {
+    &__description {
         font-size: $text2;
     }
     &__type {
