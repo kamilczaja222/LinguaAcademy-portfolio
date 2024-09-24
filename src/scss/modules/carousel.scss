@@ -23,6 +23,9 @@
         align-items: center;
         border: 0;
         background-color: transparent;
+        &:disabled {
+            background-color: #cccccc;
+        }
     }
     &__opinions {
         background-color: $white;
@@ -36,8 +39,8 @@
         min-width: 96%;
         margin: 2%;
         @media (min-width: $tablet) {
-            min-width: 46%;
-            margin: 2%;
+            min-width: 45%;
+            margin: 2.5%;
         }
         @media (min-width: $desktop) {
             min-width: 29.3%;

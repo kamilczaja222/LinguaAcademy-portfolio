@@ -7,12 +7,12 @@ const carouselBox = document.querySelector('.carousel__box--js');
 nextButton.addEventListener('click', () => {
     const position = opinionBox.offsetWidth;
     carouselBox.scrollLeft += position;
-    console.log('next');
+    console.log(position);
 })
 
 prevButton.addEventListener('click', () => {
     const position = opinionBox.offsetWidth;
     carouselBox.scrollLeft -= position;
-    console.log('prev');
+    console.log(position);
 })
 
