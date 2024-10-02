@@ -1,7 +1,7 @@
-const prevButton = document.querySelector('.carousel__buttonPrev--js');
-const nextButton = document.querySelector('.carousel__buttonNext--js');
-const opinionBox = document.querySelector('.carousel__opinions--js');
-const carouselBox = document.querySelector('.carousel__box--js');
+const prevButton = document.querySelector('.js-carousel-prev');
+const nextButton = document.querySelector('.js-carousel-next');
+const opinionBox = document.querySelector('.js-carousel-opinions');
+const carouselBox = document.querySelector('.js-carousel-box');
 
 
 nextButton.addEventListener('click', () => {

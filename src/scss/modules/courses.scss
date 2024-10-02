@@ -20,11 +20,9 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     &__box {
-        padding: 16px;
-    }
-    &__boxHeader {
         display: flex;
         justify-content: center;
+        padding: 16px;
     }
     &__button {
         font-size: $text1;
@@ -34,10 +32,6 @@
         background-color: $pink;
         padding: 16px;
         border-radius: 32px;
-    }
-    &__buttonBox {
-        display: flex;
-        justify-content: center;
     }
 
 }
