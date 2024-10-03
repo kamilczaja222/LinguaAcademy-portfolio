@@ -55,14 +55,21 @@
             transition: border-color 0.5s ease-in-out;
         }
     }
-    &__label {
+    &__element {
         padding: 16px;
-        font-size: $text2;
         display: block;
-
+        &:focus {
+            transform: translateY(0);
+        }
     }
     &__submit {
         padding: 16px;
     }
+    &__label {
+        font-size: $text2;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(32px);
+    }
 
 }
+
