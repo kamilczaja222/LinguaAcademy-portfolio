@@ -1,19 +1,40 @@
 .form {
     margin: 16px;
     width: 80%;
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &__button {
         font-size: $text2;
         background-color: $pink;
         border-radius: 8px;
         padding: 16px;
         border-style: none;
+        &:hover {
+            transform: scale(1.05, 1.05);
+        }
     }
     &__input {
         font-size: $text2;
         display: block;
         width: 100%;
         margin-top: 8px;
-        border-width: 0 0 2 0;
+        border-style: none none solid none;
+        border-width: 4px;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 4px;
+        &::placeholder {
+            color: $grey;
+        }
+        &:focus {
+            box-shadow: none;
+            outline: none;
+            border-color: $green;
+            transition: border-color 0.5s ease-in-out;
+        }
     }
     &__textarea {
         font-size: $text2;
@@ -21,11 +42,24 @@
         min-height: 128px;
         width: 100%;
         margin-top: 8px;
+        border-style: none none solid none;
+        border-width: 4px;
+        border-radius: 0;
+        &::placeholder {
+            color: $grey;
+        }
+        &:focus {
+            box-shadow: none;
+            outline: none;
+            border-color: $green;
+            transition: border-color 0.5s ease-in-out;
+        }
     }
     &__label {
         padding: 16px;
         font-size: $text2;
         display: block;
+
     }
     &__submit {
         padding: 16px;
