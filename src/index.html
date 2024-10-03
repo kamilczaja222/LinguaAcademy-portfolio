@@ -124,9 +124,32 @@
                 <p class="contact__description">Pierwsze zajęcia to lekcja próbna więc nic nie ryzykujesz. Zapisz się już dziś!</p>
             </div>
             <div class="contact__grid">
-                <form>
+                <div class="form__box">
+                    <form method="post" class="form">
+                        <label class="form__label" for="firstName">Imię
+                            <input class="form__input" id="firstName" type="text" placeholder="Imię" name="firstName" required/>
+                        </label>
 
-                </form>
+                        <label class="form__label" for="lastName">Nazwisko
+                            <input class="form__input" id="lastName" type="text" placeholder="Nazwisko" name="lastName" required/>
+                        </label>
+
+                        <label class="form__label" for="phoneNumber">Numer telefonu
+                            <input class="form__input" id="phoneNumber" type="tel" placeholder="+48 100 200 300" name="phoneNumber" required/>
+                        </label>
+
+                        <label class="form__label" for="emailAddress">Adres email
+                            <input class="form__input" id="emailAddress" type="email" placeholder="kontakt@kontakt.pl" name="emailAddress" required/>
+                        </label>
+
+                        <label class="form__label" for="yourMessage">Twoja wiadomość
+                            <textarea class="form__textarea" id="yourMessage" name="yourMessage"></textarea>
+                        </label>
+                        <p class="form__submit">
+                            <input id="send" class="form__button" type="submit" name="send" value="Wyślij"/>
+                        </p>
+                    </form>
+                </div>
                 <div class="social">
                     <h3 class="social__header">Skontaktuj się z nami telefonicznie lub odwiedz nasze social media</h3>
                     <div class="social__box">
@@ -148,7 +171,7 @@
                     </div>
                 </div>
             </div>
-                </section>
+        </section>
     </main>
     <footer class="footer">
         <img class="footer__image" src="./images/logo_lingua.png" alt="logo Lingua Academy">

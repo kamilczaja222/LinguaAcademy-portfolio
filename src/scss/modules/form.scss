@@ -1,0 +1,34 @@
+.form {
+    margin: 16px;
+    width: 80%;
+    &__button {
+        font-size: $text2;
+        background-color: $pink;
+        border-radius: 8px;
+        padding: 16px;
+        border-style: none;
+    }
+    &__input {
+        font-size: $text2;
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+        border-width: 0 0 2 0;
+    }
+    &__textarea {
+        font-size: $text2;
+        display: block;
+        min-height: 128px;
+        width: 100%;
+        margin-top: 8px;
+    }
+    &__label {
+        padding: 16px;
+        font-size: $text2;
+        display: block;
+    }
+    &__submit {
+        padding: 16px;
+    }
+
+}
