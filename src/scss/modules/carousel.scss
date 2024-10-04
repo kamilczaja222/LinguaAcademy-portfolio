@@ -32,24 +32,36 @@
     }
     &__icon {
         height: 32px;
-        @media (min-width: $tablet) {
+        @media (min-width: $desktop) {
             height: 64px;
         }
+    }
+    &__header {
+        font-size: $heading4;
+        padding-bottom: 4px;
+        border-style: none none solid none;
+        border-color: $pink;
+        border-bottom-width: 4px;
+        margin: 4px;
+    }
+    &__description {
+        font-size: $text3;
+        margin: 8px 4px;
     }
     &__opinions {
         background-color: $white;
         inset: 0;
-        margin-bottom: 64px;
+        margin-bottom: 16px;
         padding: 16px;
         margin: 2%;
         scroll-snap-align: center;
         min-height: 256px;
         border-radius: 8px;
-        min-width: 96%;
-        margin: 2%;
+        min-width: 94%;
+        margin: 3%;
         @media (min-width: $tablet) {
-            min-width: 45%;
-            margin: 2.5%;
+            min-width: 47%;
+            margin: 1.5%;
         }
         @media (min-width: $desktop) {
             min-width: 29.3%;
