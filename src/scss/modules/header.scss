@@ -52,7 +52,6 @@
             border-style: none none solid none;
             border-color: $pink;
             border-bottom-width: 4px;
-            z-index: 1;
         }
         &--close {
             @media (max-width: $desktop) {
