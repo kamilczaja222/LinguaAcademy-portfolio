@@ -1,5 +1,9 @@
 .footer {
+    background-color: $pink;
+    min-height: 256px;
+    width: 100%;
     display: block;
+    padding: 16px;
     @media (min-width: $tablet) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -8,11 +12,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    background-color: $pink;
-    min-height: 256px;
-    width: 100%;
     &__header {
-        font-size: $text1;
+        font-size: $text2;
+        @media (min-width: $desktop) {
+            font-size: $text1;
+        }
     }
     &__nav {
         list-style-type: none;

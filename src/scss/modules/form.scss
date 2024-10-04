@@ -1,6 +1,9 @@
 .form {
     margin: 16px;
-    width: 80%;
+    width: 100%;
+    @media (min-width: $tablet) {
+        width: 80%;
+    }
     &__box {
         display: flex;
         justify-content: center;

@@ -1,37 +1,51 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr;
-    @media (min-width: $desktop) {
-        grid-template-columns: 1fr 1fr;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     justify-items: center;
     max-width: $desktop;
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     &__box {
         background-color: $green;
         margin: 0;
     }
     &__header {
-        font-size: $heading1;
+        font-size: $heading3;
         text-align: center;
+        @media (min-width: $desktop) {
+            font-size: $heading1;
+        }
     }
     &__description {
-        font-size: $text1;
-        line-height: 2.5rem;
+        font-size: $text2;
+        @media (min-width: $desktop) {
+            font-size: $text1;
+            line-height: 2.5rem;
+        }
     }
     &__button {
-        font-size: $text1;
+        font-size: $text2;
         line-height: 2.5rem;
         text-decoration: none;
         color: $black;
         background-color: $pink;
         padding: 8px;
         border-radius: 32px;
+        @media (min-width: $desktop) {
+            font-size: $text1;
+        }
     }
     &__container {
-        padding-bottom: 32px;
+        padding:0 16px 32px 16px;
+        margin: 0 16px;
     }
     &__image {
-        padding: 8px;
+        padding: 16px;
         max-width: 100%;
+        margin: 0 16px;
     }
 }

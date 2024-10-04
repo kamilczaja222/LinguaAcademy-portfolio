@@ -1,13 +1,22 @@
 .courses {
-    max-width: $desktop;
-    margin : 0 auto;
+    margin : 0 16px;
     padding: 32px 0;
+    @media (min-width: $desktop) {
+        max-width: $desktop;
+        margin : 0 auto;
+    }
     &__heading {
-        font-size: $heading1;
+        font-size: $heading3;
         text-align: center;
+        @media (min-width: $tablet) {
+            font-size: $heading1;
+        }
     }
     &__header {
-        font-size: $text1;
+        font-size: $text2;
+        @media (min-width: $tablet) {
+            font-size: $text1;
+        }
     }
     &__image {
         padding: 8px;
@@ -28,13 +37,17 @@
         padding: 16px;
     }
     &__button {
-        font-size: $text1;
+        font-size: $text2;
         line-height: 2.5rem;
         text-decoration: none;
         color: $black;
         background-color: $pink;
         padding: 16px;
         border-radius: 32px;
+        @media (min-width: $desktop) {
+            font-size: $text1;
+            line-height: 2.5rem;
+        }
     }
 
 }

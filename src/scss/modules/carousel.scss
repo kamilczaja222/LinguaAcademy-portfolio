@@ -16,15 +16,24 @@
         scroll-snap-type: x mandatory;
     }
     &__button {
-        padding: 16px;
-        margin: 0 16px;
-        height: 64px;
+        padding: 8px;
         display: flex;
         align-items: center;
         border: 0;
         background-color: transparent;
         &:disabled {
             background-color: #cccccc;
+        }
+        @media (min-width: $tablet) {
+            padding: 16px;
+            margin: 0 16px;
+            height: 64px;
+        }
+    }
+    &__icon {
+        height: 32px;
+        @media (min-width: $tablet) {
+            height: 64px;
         }
     }
     &__opinions {

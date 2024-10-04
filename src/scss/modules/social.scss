@@ -1,15 +1,24 @@
 .social {
+    padding: 0 16px;
     &__header {
-        font-size: $text1;
+        font-size: $text2;
         text-align: center;
+        @media (min-width: $desktop) {
+            font-size: $text1;
+        }
     }
     &__box {
         display: flex;
         justify-content: flex-start;
         column-gap: 16px;
+        margin: 32px 0;
     }
     &__description {
-        font-size: $text1;
+        font-size: $text2;
+        margin: 0;
+        @media (min-width: $desktop) {
+            font-size: $text1;
+        }
     }
     &__link {
         font-size: $text2;
