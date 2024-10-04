@@ -12,8 +12,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &__header {
         font-size: $text2;
+        margin: 8px 0;
         @media (min-width: $desktop) {
             font-size: $text1;
         }
@@ -21,6 +27,13 @@
     &__nav {
         list-style-type: none;
         padding: 0;
+        visibility: hidden;
+        @media (min-width: $desktop) {
+            visibility: visible;
+        }
+        @media (max-width: $desktop) {
+            height: 0;
+        }
     }
     &__link {
         font-size: 1rem;
