@@ -1,11 +1,14 @@
 .about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    @media (min-width: $desktop) {
+        grid-template-columns: 1fr 1fr;
+    }
     justify-items: center;
     max-width: $desktop;
     &__box {
         background-color: $green;
-        width: 100%;
+        margin: 0;
     }
     &__header {
         font-size: $heading1;
@@ -29,5 +32,6 @@
     }
     &__image {
         padding: 8px;
+        max-width: 100%;
     }
 }

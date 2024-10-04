@@ -1,18 +1,29 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 128px;
+    min-height: 128px;
     max-width: $desktop;
-    margin : 0 auto 16px;
+    margin : 0 auto 8px;
     background-color: $white;
+    @media (max-width: $desktop) {
+        position: sticky;
+        top: 0;
+    }
     &__image {
         align-items: center;
         justify-content: center;
+        max-width: 100%;
     }
     &__nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @media (max-width: $desktop) {
+            display: block;
+
+        }
+        @media (min-width: $desktop) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         gap: 32px;
         list-style-type: none;
         padding-top: 24px;
@@ -21,6 +32,29 @@
             line-height: 2.5rem;
             text-decoration: none;
             color: $black;
+            padding: 16px;
         }
+        &--open {
+            display: block;
+        }
+        &--close {
+            @media (max-width: $desktop) {
+                display: none;
+            }
+        }
+    }
+}
+
+.hamburger {
+    background-color: $green;
+    font-size: $text1;
+    border: none;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    @media (min-width: $desktop) {
+        display: none;
     }
 }

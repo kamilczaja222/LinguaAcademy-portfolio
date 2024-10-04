@@ -2,7 +2,8 @@ const prevButton = document.querySelector('.js-carousel-prev');
 const nextButton = document.querySelector('.js-carousel-next');
 const opinionBox = document.querySelector('.js-carousel-opinions');
 const carouselBox = document.querySelector('.js-carousel-box');
-
+const hamburger = document.querySelector('.js-hamburger');
+const nav = document.querySelector('.js-nav');
 
 nextButton.addEventListener('click', () => {
     const position = opinionBox.offsetWidth;
@@ -16,3 +17,7 @@ prevButton.addEventListener('click', () => {
     console.log(position);
 })
 
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('header__nav--close');
+    nav.classList.toggle('header__nav--open');
+})

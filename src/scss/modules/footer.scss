@@ -1,6 +1,13 @@
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: block;
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     background-color: $pink;
     min-height: 256px;
     width: 100%;
@@ -18,5 +25,8 @@
     }
     &__description {
         font-size: 1rem;
+    }
+    &__image {
+        max-width: 100%;
     }
 }
