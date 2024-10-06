@@ -8,25 +8,23 @@ const nav = document.querySelector('.js-nav');
 
 let counter = 0;
 let maxScroll = 0;
-
 const screenSize = parseInt(screenBox.offsetWidth);
-let position = parseInt(carouselBox.offsetWidth)
-if(screenSize < 768){
-    position = position;
-    maxScroll = 5;
-} else if(screenSize > 768 && screenSize < 1256) {
-    position = 0.5*position;
-    maxScroll = 5;
-} else {
-    position = 0.33*position;
-    maxScroll = 5;
-    maxScroll = 3;
+const position = parseInt(opinionBox.offsetWidth)
+
+function checkScreen(screenSize) {
+    if(screenSize < 768) {
+        maxScroll = 5;
+    } else if (screenSize < 1256) {
+        maxScroll = 5;
+    } else {
+        maxScroll = 3;
+    }
 }
 
-
+checkScreen(screenSize);
 
 nextButton.addEventListener('click', () => {
-    const position = parseInt(opinionBox.offsetWidth);
+    checkScreen(screenSize);
     carouselBox.scrollLeft += position;
     counter++;
     console.log(counter);
@@ -39,7 +37,7 @@ nextButton.addEventListener('click', () => {
 })
 
 prevButton.addEventListener('click', () => {
-    const position = opinionBox.offsetWidth;
+    checkScreen(screenSize);
     carouselBox.scrollLeft -= position;
     counter--;
     console.log(counter);
