@@ -30,26 +30,30 @@
         box-shadow: none;
         padding: 4px;
         &::placeholder {
-            color: $grey;
+            color: transparent;
         }
         &:focus {
             box-shadow: none;
             outline: none;
             border-color: $green;
             transition: border-color 0.5s ease-in-out;
+            &::placeholder {
+                transition: color 0.5s ease-in-out;
+                color: $grey;
+            }
         }
     }
     &__textarea {
         font-size: $text2;
         display: block;
-        min-height: 128px;
+        height: 128px;
         width: 100%;
         margin-top: 8px;
         border-style: none none solid none;
         border-width: 4px;
         border-radius: 0;
         &::placeholder {
-            color: $grey;
+            color: transparent;
         }
         &:focus {
             box-shadow: none;
@@ -72,7 +76,18 @@
         font-size: $text2;
         transition: all 0.5s ease-in-out;
         transform: translateY(32px);
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        top: -36px;
     }
 
+}
+
+.form__input:focus + label {
+    top: -64px;
+}
+
+.form__textarea:focus + label {
+    top: -166px;
 }
 

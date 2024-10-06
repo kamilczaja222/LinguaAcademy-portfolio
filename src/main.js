@@ -5,8 +5,13 @@ const carouselBox = document.querySelector('.js-carousel-box');
 const hamburger = document.querySelector('.js-hamburger');
 const nav = document.querySelector('.js-nav');
 
+let element = 2;
+
+const margin = (carouselBox.offsetWidth - opinionBox.offsetWidth)/element;
+
+
 nextButton.addEventListener('click', () => {
-    const position = opinionBox.offsetWidth;
+    const position = parseInt(opinionBox.offsetWidth);
     carouselBox.scrollLeft += position;
     console.log(position);
 })
