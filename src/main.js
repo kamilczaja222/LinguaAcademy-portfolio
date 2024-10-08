@@ -16,7 +16,7 @@ function checkScreen() {
     if(screenSize < 768) {
         maxScroll = 5;
     } else if (screenSize < 1256) {
-        maxScroll = 5;
+        maxScroll = 4;
     } else {
         maxScroll = 3;
     }
