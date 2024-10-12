@@ -10,7 +10,7 @@
         grid-template-columns: 1fr 1fr;
     }
     &__box {
-        background-color: $green;
+        background-color: $primary;
         margin: 0;
     }
     &__header {
@@ -32,7 +32,7 @@
         line-height: 2.5rem;
         text-decoration: none;
         color: $black;
-        background-color: $pink;
+        background-color: $secondary;
         padding: 8px;
         border-radius: 32px;
         @media (min-width: $desktop) {

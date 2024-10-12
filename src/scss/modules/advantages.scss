@@ -1,6 +1,6 @@
 .advantages {
     margin:0 16px;
-    border-bottom: 4px solid $pink;
+    border-bottom: 4px solid $secondary;
     padding: 32px 4px;
     @media (min-width: $tablet) {
         max-width: 768px;
@@ -22,5 +22,8 @@
     }
     &__element {
         padding: 8px;
+        &::before {
+            content:url('../images/check.svg');
+        }
     }
 }

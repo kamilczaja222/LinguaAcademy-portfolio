@@ -11,7 +11,7 @@
     }
     &__button {
         font-size: $text2;
-        background-color: $pink;
+        background-color: $secondary;
         border-radius: 8px;
         padding: 16px;
         border-style: none;
@@ -35,7 +35,7 @@
         &:focus {
             box-shadow: none;
             outline: none;
-            border-color: $green;
+            border-color: $primary;
             transition: border-color 0.5s ease-in-out;
             &::placeholder {
                 transition: color 0.5s ease-in-out;
@@ -58,7 +58,7 @@
         &:focus {
             box-shadow: none;
             outline: none;
-            border-color: $green;
+            border-color: $primary;
             transition: border-color 0.5s ease-in-out;
         }
     }

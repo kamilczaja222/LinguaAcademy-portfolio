@@ -44,7 +44,7 @@
         font-size: $heading4;
         padding-bottom: 4px;
         border-style: none none solid none;
-        border-color: $pink;
+        border-color: $secondary;
         border-bottom-width: 4px;
         margin: 4px;
     }
@@ -77,9 +77,5 @@
         display: flex;
         column-gap: 4px;
     }
-}
-
-.js-hidden {
-    visibility: hidden;
 }
 

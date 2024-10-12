@@ -27,19 +27,17 @@
         }   
     }
     &__nav {
-        @media (max-width: $desktop) {
-            display: block;
-            margin-bottom: 0;
-            padding-bottom: 16px;
-        }
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 16px;
+        gap: 32px;
+        list-style-type: none;
         @media (min-width: $desktop) {
             display: flex;
             justify-content: center;
             align-items: center;
             padding-top: 24px;
         }
-        gap: 32px;
-        list-style-type: none; 
         &--link {
             font-size: $text1;
             line-height: 2.5rem;
@@ -50,19 +48,20 @@
         &--open {
             display: block;
             border-style: none none solid none;
-            border-color: $pink;
+            border-color: $secondary;
             border-bottom-width: 4px;
         }
         &--close {
-            @media (max-width: $desktop) {
-                display: none;
+            display: none;
+            @media (min-width: $desktop) {
+                display: block;
             }
         }
     }
 }
 
 .hamburger {
-    background-color: $green;
+    background-color: $primary;
     font-size: $text1;
     border: none;
     height: 48px;

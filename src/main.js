@@ -1,4 +1,4 @@
-const HIDDEN_CLASS = 'js-hidden';
+const HIDDEN_CLASS = 'hidden';
 const prevButton = document.querySelector('.js-carousel-prev');
 const nextButton = document.querySelector('.js-carousel-next');
 const opinionBox = document.querySelector('.js-carousel-opinions');
@@ -20,7 +20,6 @@ function checkScreen() {
     } else {
         maxScroll = 3;
     }
-    console.log('resize')
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
