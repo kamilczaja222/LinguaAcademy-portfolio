@@ -1,32 +1,40 @@
 .contact {
     margin : 0 16px 64px;
+
     @media (min-width: $desktop) {
         max-width: $desktop;
         margin : 0 auto 64px;
     }
+
     &__header {
         font-size: $heading2;
         text-align: center;
+
         @media (min-width: $desktop) {
             font-size: $heading1;
         }
     }
+
     &__description {
         font-size: $text2;
         min-width: 256px;
         padding-bottom: 4px;
         margin-bottom: 32px;
         border-bottom: 4px dotted $secondary;
+
         @media (min-width: $desktop) {
             font-size: $text1;
         }
+
     }
     &__box {
         display: flex;
         justify-content: center;
     }
+
     &__grid {
         display: block;
+        
         @media (min-width: $tablet) {
             display: grid;
             grid-template-columns: 1fr 1fr;

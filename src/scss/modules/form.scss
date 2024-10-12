@@ -1,24 +1,29 @@
 .form {
     margin: 16px;
     width: 100%;
+
     @media (min-width: $tablet) {
         width: 80%;
     }
+
     &__box {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     &__button {
         font-size: $text2;
         background-color: $secondary;
         border-radius: 8px;
         padding: 16px;
         border-style: none;
+
         &:hover {
             transform: scale(1.05, 1.05);
         }
     }
+
     &__input {
         font-size: $text2;
         display: block;
@@ -29,20 +34,24 @@
         border-radius: 0;
         box-shadow: none;
         padding: 4px;
+
         &::placeholder {
             color: transparent;
         }
+
         &:focus {
             box-shadow: none;
             outline: none;
             border-color: $primary;
             transition: border-color 0.5s ease-in-out;
+
             &::placeholder {
                 transition: color 0.5s ease-in-out;
                 color: $grey;
             }
         }
     }
+    
     &__textarea {
         font-size: $text2;
         display: block;
@@ -52,9 +61,11 @@
         border-style: none none solid none;
         border-width: 4px;
         border-radius: 0;
+
         &::placeholder {
             color: transparent;
         }
+
         &:focus {
             box-shadow: none;
             outline: none;
@@ -65,13 +76,16 @@
     &__element {
         padding: 16px;
         display: block;
+
         &:focus {
             transform: translateY(0);
         }
     }
+
     &__submit {
         padding: 16px;
     }
+
     &__label {
         font-size: $text2;
         transition: all 0.5s ease-in-out;

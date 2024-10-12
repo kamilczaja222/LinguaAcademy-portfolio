@@ -5,28 +5,36 @@
     flex-wrap: wrap;
     justify-items: center;
     max-width: $desktop;
+
     @media (min-width: $desktop) {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     &__box {
         background-color: $primary;
         margin: 0;
     }
+
     &__header {
         font-size: $heading3;
         text-align: center;
+
         @media (min-width: $desktop) {
             font-size: $heading1;
         }
     }
+
     &__description {
         font-size: $text2;
+
         @media (min-width: $desktop) {
             font-size: $text1;
             line-height: 2.5rem;
         }
+
     }
+
     &__button {
         font-size: $text2;
         line-height: 2.5rem;
@@ -35,14 +43,17 @@
         background-color: $secondary;
         padding: 8px;
         border-radius: 32px;
+
         @media (min-width: $desktop) {
             font-size: $text1;
         }
     }
+
     &__container {
         padding:0 16px 32px 16px;
         margin: 0 16px;
     }
+    
     &__image {
         padding: 16px;
         max-width: 100%;

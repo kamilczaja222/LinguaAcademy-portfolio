@@ -2,26 +2,33 @@
     margin:0 16px;
     border-bottom: 4px solid $secondary;
     padding: 32px 4px;
+
     @media (min-width: $tablet) {
         max-width: 768px;
         margin:0 auto;
     }
+
     &__header {
         font-size: $heading3;
         text-align: center;
+
         @media (min-width: $tablet) {
             font-size: $heading2;
         }
     }
+
     &__list {
         font-size: $text2;
         list-style: none;
     }
+
     &__image {
         padding-right: 8px;
     }
+
     &__element {
         padding: 8px;
+        
         &::before {
             content:url('../images/check.svg');
         }

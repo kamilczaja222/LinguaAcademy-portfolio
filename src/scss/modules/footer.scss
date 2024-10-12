@@ -4,49 +4,59 @@
     width: 100%;
     display: block;
     padding: 16px;
+
     @media (min-width: $tablet) {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     @media (min-width: $desktop) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     &__box {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     &__header {
         font-size: $text2;
         margin: 8px 0;
+
         @media (min-width: $desktop) {
             font-size: $text1;
         }
     }
+
     &__nav {
         list-style-type: none;
         padding: 0;
         visibility: hidden;
+        height: 0;
+        
         @media (min-width: $desktop) {
             visibility: visible;
-        }
-        @media (max-width: $desktop) {
-            height: 0;
+            height: auto
         }
     }
+
     &__link {
         font-size: 1rem;
         text-decoration: none;
         color: $black;
         transition: color 0.5s ease-in-out;
+
         &:hover {
             color: $white;
         }
     }
+
     &__description {
         font-size: 1rem;
     }
+
     &__image {
         max-width: 100%;
     }

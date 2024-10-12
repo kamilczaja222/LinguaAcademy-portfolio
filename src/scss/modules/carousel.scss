@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
     &__box {
         margin: 0 auto;
         position: relative;
@@ -16,30 +17,37 @@
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
     }
+
     &__button {
         padding: 4px;
         display: flex;
         align-items: center;
         border: 0;
         background-color: transparent;
+
         &:disabled {
             background-color: #cccccc;
         }
+
         @media (min-width: $tablet) {
             padding: 8px;
             height: 64px;
         }
     }
+
     &__icon {
         height: 32px;
+
         @media (min-width: $desktop) {
             height: 64px;
         }
     }
+
     &__image {
         height: 32px;
         width: 32px;
     }
+
     &__header {
         font-size: $heading4;
         padding-bottom: 4px;
@@ -48,10 +56,12 @@
         border-bottom-width: 4px;
         margin: 4px;
     }
+
     &__description {
         font-size: $text3;
         margin: 8px 4px;
     }
+
     &__opinions {
         background-color: $white;
         inset: 0;
@@ -62,15 +72,18 @@
         border-radius: 8px;
         min-width: 94%;
         margin: 3%;
+
         @media (min-width: $tablet) {
             min-width: 47%;
             margin: 1.5%;
         }
+
         @media (min-width: $desktop) {
             min-width: 30.3%;
             margin: 1.52%;
         }
     }
+    
     &__rating {
         position: absolute;
         bottom: 16px;
