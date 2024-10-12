@@ -4,7 +4,7 @@ Descriprion:
 
 The Lingua Academy portfolio, built using HTML, CSS, and JavaScript, is showcases a portfolio,. The project aims to teach the basics of frontend technologies.
 
-##TOOLS
+## TOOLS
 
 - HTML
 - CSS
