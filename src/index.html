@@ -1,262 +1,503 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lingua Academy</title>
-    <link rel="stylesheet" href="scss/style.scss">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="scss/style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <img class="header__image" src="./images/logo_lingua.png" alt="logo Lingua Academy">
-        <nav class="header__nav--close js-nav">
-            <ul class="header__nav header__nav--size">
-                <li><a class="header__nav--link" href="#about">O nas</a></li>
-                <li><a class="header__nav--link" href="#courses">Kursy</a></li>
-                <li><a class="header__nav--link" href="#opinions">Opinie</a></li>
-                <li><a class="header__nav--link" href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-        <button class="hamburger js-hamburger" aria-label="Menu">&#8801;</button>
+      <img
+        class="header__image"
+        src="./images/logo_lingua.png"
+        alt="logo Lingua Academy"
+      />
+      <nav class="header__nav--close js-nav">
+        <ul class="header__nav header__nav--size">
+          <li><a class="header__nav--link" href="#about">O nas</a></li>
+          <li><a class="header__nav--link" href="#courses">Kursy</a></li>
+          <li><a class="header__nav--link" href="#opinions">Opinie</a></li>
+          <li><a class="header__nav--link" href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger js-hamburger" aria-label="Menu">&#8801;</button>
     </header>
     <main>
-        <section id="about" class="about__box">
-            <article class="about">
-                <img class="about__image" src="./images/picture_child.png" alt="Zadowolony kursant">
-                <div class="about__container">
-                    <h1 class="about__header">Angielski dla dzieci i młodzieży</h1>
-                    <p class="about__description">Zarażamy naszą pasją do języka angielskiego. Dzięki nam Twoje dziecko przełamie barierę
-                        językową oraz zacznie używać angielskiego w codziennym życiu! Zajęcia z języka angielskiego prowadzone są dla dzieci
-                        oraz młodzieży w wieku przedszkolnym oraz szkolnym.
-                    </p>
-                    <a class="about__button" href="#contact">Umów lekcje próbną</a>
-                </div>
-            </article>
-        </section>
-            <article class="advantages">
-                <h2 class="advantages__header">Zajęcia z języka angielskiego dla dzieci i młodzieży w Lingua Academy to:</h2>
-                <ul class="advantages__list">
-                    <li class="advantages__element">pozytywne emocje</li>
-                    <li class="advantages__element">nauka poprzez zabawe</li>
-                    <li class="advantages__element">wykorzystanie wszystkich zmysłów</li>
-                    <li class="advantages__element">praca z tablicą interaktywną i aplikacjami</li>
-                    <li class="advantages__element">nauka samodzielnego uczenia</li>
-                </ul>
-            </article>
-        <section class="courses" id="courses">
-            <h2 class="courses__heading">Jak uczymy w Lingua Academy</h2>
-            <div class="courses__type">
-                <article class="courses__article">
-                    <div class="courses__box">
-                        <img class="courses__image" src="./images/checkbox.svg" alt="">
-                        <h3 class="courses__header">Zajęcia grupowe</h3>
-                    </div>
-                    <p class="courses__description">Zajęcia grupowe z języka angielskiego prowadzone są dla uczniów szkół podstawowych i średnich.
-                        Wykorzystując różnorodne aktywności sprawiamy, że uczniowie chętniej angażują się w lekcje. Pokazujemy
-                        że nauka języka to nie tylko wypełnianie kolejnych zadań.</p>
-                </article>
-                <article class="courses__article">
-                    <div class="courses__box">
-                        <img class="courses__image" src="./images/checkbox.svg" alt="">
-                        <h3 class="courses__header">Zajęcia indywidualne</h3>
-                    </div>
-                    <p class="courses__description">Zajęcia indywidualne z języka angielskiego dopasowane do potrzeb kursanta. W trakcie trwania zajęć możemy
-                        skupić się na wybranych przez Ciebie zagadnieniach, nadrobieniu zaległości lub poszerzeniu zdobytej już
-                        wiedzy</p>
-                </article>
-                <article class="courses__article">
-                    <div class="courses__box">
-                        <img class="courses__image" src="./images/checkbox.svg" alt="">
-                        <h3 class="courses__header">Egzaminy językowe</h3>
-                    </div>
-                    <p class="courses__description">Kompleksowe przygotowanie do egazminu ósmoklasisty i matury. Zajęcia powtarzające wszystkie zagadnienia
-                        gramatyczne oraz praktyczne rozwiązywanie zadań obowiązujących na egzaminach.</p>
-                </article>
-            </div>
+      <section id="about" class="about__box">
+        <article class="about">
+          <img
+            class="about__image"
+            src="./images/picture_child.png"
+            alt="Zadowolony kursant"
+          />
+          <div class="about__container">
+            <h1 class="about__header">Angielski dla dzieci i młodzieży</h1>
+            <p class="about__description">
+              Zarażamy naszą pasją do języka angielskiego. Dzięki nam Twoje
+              dziecko przełamie barierę językową oraz zacznie używać
+              angielskiego w codziennym życiu! Zajęcia z języka angielskiego
+              prowadzone są dla dzieci oraz młodzieży w wieku przedszkolnym oraz
+              szkolnym.
+            </p>
+            <a class="about__button" href="#contact">Umów lekcje próbną</a>
+          </div>
+        </article>
+      </section>
+      <article class="advantages">
+        <h2 class="advantages__header">
+          Zajęcia z języka angielskiego dla dzieci i młodzieży w Lingua Academy
+          to:
+        </h2>
+        <ul class="advantages__list">
+          <li class="advantages__element">pozytywne emocje</li>
+          <li class="advantages__element">nauka poprzez zabawe</li>
+          <li class="advantages__element">wykorzystanie wszystkich zmysłów</li>
+          <li class="advantages__element">
+            praca z tablicą interaktywną i aplikacjami
+          </li>
+          <li class="advantages__element">nauka samodzielnego uczenia</li>
+        </ul>
+      </article>
+      <section class="courses" id="courses">
+        <h2 class="courses__heading">Jak uczymy w Lingua Academy</h2>
+        <div class="courses__type">
+          <article class="courses__article">
             <div class="courses__box">
-                <a class="courses__button" href="#contact">Skontaktuj się z nami</a>
+              <img class="courses__image" src="./images/checkbox.svg" alt="" />
+              <h3 class="courses__header">Zajęcia grupowe</h3>
             </div>
-        </section>
-        <section class="opinions" id="opinions">
-            <div class="opinions__box">
-                <h2 class="opinions__header">Od 8 lat prowadzimy zajęcia z języka angielskiego dla dzieci i młodzieży. Poznaj opinie
-                    naszych klientów!</h2>
+            <p class="courses__description">
+              Zajęcia grupowe z języka angielskiego prowadzone są dla uczniów
+              szkół podstawowych i średnich. Wykorzystując różnorodne aktywności
+              sprawiamy, że uczniowie chętniej angażują się w lekcje. Pokazujemy
+              że nauka języka to nie tylko wypełnianie kolejnych zadań.
+            </p>
+          </article>
+          <article class="courses__article">
+            <div class="courses__box">
+              <img class="courses__image" src="./images/checkbox.svg" alt="" />
+              <h3 class="courses__header">Zajęcia indywidualne</h3>
             </div>
-            <div class="carousel js-screen-box">
-                <button class="carousel__button js-carousel-prev hidden"><img class="carousel__icon" src="./images/angle-left.svg" alt=""></button>
-                <div class="carousel__box js-carousel-box">
-                    <div class="carousel__opinions js-carousel-opinions">
-                        <h3 class="carousel__header">Janusz</h3>
-                        <p class="carousel__description">Bardzo polecamy zajęcia z Panią Patrycją! Profesjonalnie, ze świetnym kontaktem z Dzieciakami.</p>
-                        <p class="carousel__rating">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_empty.png" alt="">
-                        </p>
-                    </div>
-                    <div class="carousel__opinions js-carousel-opinions">
-                        <h3 class="carousel__header">Krystyna</h3>
-                        <p class="carousel__description">Polecamy Lingua Academy! Pani Julia zawsze świetnie angażuje dzieci w lekcje, wychodzą zawsze zadowoleni i uśmiechnięci, nigdy znudzeni!</p>
-                        <p class="carousel__rating">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                        </p>
-                    </div>
-                    <div class="carousel__opinions js-carousel-opinions">
-                        <h3 class="carousel__header">Joanna</h3>
-                        <p class="carousel__description">Hania jest bardzo zadowolona z zajęć, mówi, że Pani Julia jest bardzo miła i wszystko dobrze tłumaczy.</p>
-                        <p class="carousel__rating">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_empty.png" alt="">
-                            <img class="carousel__image" src="./images/star_empty.png" alt="">
-                        </p>
-                    </div>
-                    <div class="carousel__opinions js-carousel-opinions">
-                        <h3 class="carousel__header">Grzegorz</h3>
-                        <p class="carousel__description">Moje córki uwielbiają Panią Julię, jest bardzo miła, punktualna, zawsze przygotowana do zajęć.</p>
-                        <p class="carousel__rating">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt=""> 
-                        </p>
-                    </div>
-                    <div class="carousel__opinions js-carousel-opinions">
-                        <h3 class="carousel__header">Amelia</h3>
-                        <p class="carousel__description">Serdecznie polecam!!! Od 5 lat moje dzieci najpierw córka teraz syn uczęszcza na zajęcia. Matura zdana na niemal 100 procent.</p>
-                        <p class="carousel__rating">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                        </p>
-                    </div>
-                    <div class="carousel__opinions js-carousel-opinions">
-                        <h3 class="carousel__header">Zygmunt</h3>
-                        <p class="carousel__description">Serdecznie polecam!!! Od 5 lat moje dzieci najpierw córka teraz syn uczęszcza na zajęcia. Matura zdana na niemal 100 procent.</p>
-                        <p class="carousel__rating">
-                            <img class="carousel__image" src="./images/star_full.png" alt="">
-                            <img class="carousel__image" src="./images/star_empty.png" alt="">
-                            <img class="carousel__image" src="./images/star_empty.png" alt="">
-                            <img class="carousel__image" src="./images/star_empty.png" alt="">
-                            <img class="carousel__image" src="./images/star_empty.png" alt="">
-                        </p>
-                    </div>
-                </div>
-                <button class="carousel__button js-carousel-next"><img class="carousel__icon" src="./images/angle-right.svg" alt=""></button>
+            <p class="courses__description">
+              Zajęcia indywidualne z języka angielskiego dopasowane do potrzeb
+              kursanta. W trakcie trwania zajęć możemy skupić się na wybranych
+              przez Ciebie zagadnieniach, nadrobieniu zaległości lub poszerzeniu
+              zdobytej już wiedzy
+            </p>
+          </article>
+          <article class="courses__article">
+            <div class="courses__box">
+              <img class="courses__image" src="./images/checkbox.svg" alt="" />
+              <h3 class="courses__header">Egzaminy językowe</h3>
             </div>
-        </section>
-        <section id="contact" class="contact" >
-            <h2 class="contact__header">Skontaktuj się z nami aby zapisać się na zajęcia z języka angielskiego</h2>
-            <div class="contact__box">
-                <p class="contact__description">Pierwsze zajęcia to lekcja próbna więc nic nie ryzykujesz. Zapisz się już dziś!</p>
+            <p class="courses__description">
+              Kompleksowe przygotowanie do egazminu ósmoklasisty i matury.
+              Zajęcia powtarzające wszystkie zagadnienia gramatyczne oraz
+              praktyczne rozwiązywanie zadań obowiązujących na egzaminach.
+            </p>
+          </article>
+        </div>
+        <div class="courses__box">
+          <a class="courses__button" href="#contact">Skontaktuj się z nami</a>
+        </div>
+      </section>
+      <section class="opinions" id="opinions">
+        <div class="opinions__box">
+          <h2 class="opinions__header">
+            Od 8 lat prowadzimy zajęcia z języka angielskiego dla dzieci i
+            młodzieży. Poznaj opinie naszych klientów!
+          </h2>
+        </div>
+        <div class="carousel js-screen-box">
+          <button class="carousel__button js-carousel-prev hidden">
+            <img class="carousel__icon" src="./images/angle-left.svg" alt="" />
+          </button>
+          <div class="carousel__box js-carousel-box">
+            <div class="carousel__opinions js-carousel-opinions">
+              <h3 class="carousel__header">Janusz</h3>
+              <p class="carousel__description">
+                Bardzo polecamy zajęcia z Panią Patrycją! Profesjonalnie, ze
+                świetnym kontaktem z Dzieciakami.
+              </p>
+              <p class="carousel__rating">
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_empty.png"
+                  alt=""
+                />
+              </p>
             </div>
-            <div class="contact__grid">
-                <div class="form__box">
-                    <form method="post" class="form">
-                        <p class="form__element">
-                            <input class="form__input" id="firstName" type="text" placeholder="Jan" name="firstName" required>
-                            <label class="form__label" for="firstName">Imię</label>
-                        </p>
-                        <p class="form__element">
-                            <input class="form__input" id="lastName" type="text" placeholder="Kowalski" name="lastName" required>
-                            <label class="form__label" for="lastName">Nazwisko</label>
-                        </p>
-                        <p class="form__element">
-                            <input class="form__input" id="phoneNumber" type="tel" placeholder="+48100200300" name="phoneNumber" required>
-                            <label class="form__label" for="phoneNumber">Numer telefonu</label>
-                        </p>
-                        <p class="form__element">
-                            <input class="form__input" id="emailAddress" type="email" placeholder="kontakt@kontakt.pl" name="emailAddress" required>
-                            <label class="form__label" for="emailAddress">Adres email</label>
-                        </p>
-                        <p class="form__element">
-                            <textarea class="form__textarea" id="yourMessage" name="yourMessage" placeholder="Twoja wiadomość"></textarea>
-                            <label class="form__label" for="yourMessage">Twoja wiadomość</label>
-                        </p>
-                         <p class="form__submit">
-                            <input id="send" class="form__button" type="submit" name="send" value="Wyślij">
-                        </p>
-                    </form>
-                </div>
-                <div class="social">
-                    <h3 class="social__header">Skontaktuj się z nami telefonicznie lub odwiedz nasze social media</h3>
-                    <div class="social__box">
-                        <img class="social__icon" src="./images/phone-call.svg" alt=""><p class="social__description">Telefon</p>
-                    </div>
-                    <a class="social__link" href="tel:+48000000000">+48 000 000 000</a>
-                    <div class="social__box">
-                        <img class="social__icon" src="./images/envelope.svg" alt=""><p class="social__description">Email</p>
-                    </div>
-                    <a class="social__link" href="mailto:kontakt@lingua-academy.pl">kontakt@lingua-academy.pl</a>
-                    <div class="social__box">
-                        <img class="social__icon" src="./images/hastag.svg" alt="">
-                        <p class="social__description">Media społecznościowe</p>
-                    </div>
-                    <div class="social__link--box">
-                        <a class="social__link" href="#"><img class="social__icon" src="./images/facebook.svg" alt=""></a>
-                        <a class="social__link" href="#"><img class="social__icon" src="./images/instagram.svg" alt=""></a>
-                        <a class="social__link" href="#"><img class="social__icon" src="./images/tik-tok.svg" alt=""></a>
-                    </div>
-                </div>
+            <div class="carousel__opinions js-carousel-opinions">
+              <h3 class="carousel__header">Krystyna</h3>
+              <p class="carousel__description">
+                Polecamy Lingua Academy! Pani Julia zawsze świetnie angażuje
+                dzieci w lekcje, wychodzą zawsze zadowoleni i uśmiechnięci,
+                nigdy znudzeni!
+              </p>
+              <p class="carousel__rating">
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+              </p>
             </div>
-        </section>
+            <div class="carousel__opinions js-carousel-opinions">
+              <h3 class="carousel__header">Joanna</h3>
+              <p class="carousel__description">
+                Hania jest bardzo zadowolona z zajęć, mówi, że Pani Julia jest
+                bardzo miła i wszystko dobrze tłumaczy.
+              </p>
+              <p class="carousel__rating">
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_empty.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_empty.png"
+                  alt=""
+                />
+              </p>
+            </div>
+            <div class="carousel__opinions js-carousel-opinions">
+              <h3 class="carousel__header">Grzegorz</h3>
+              <p class="carousel__description">
+                Moje córki uwielbiają Panią Julię, jest bardzo miła, punktualna,
+                zawsze przygotowana do zajęć.
+              </p>
+              <p class="carousel__rating">
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+              </p>
+            </div>
+            <div class="carousel__opinions js-carousel-opinions">
+              <h3 class="carousel__header">Amelia</h3>
+              <p class="carousel__description">
+                Serdecznie polecam!!! Od 5 lat moje dzieci najpierw córka teraz
+                syn uczęszcza na zajęcia. Matura zdana na niemal 100 procent.
+              </p>
+              <p class="carousel__rating">
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+              </p>
+            </div>
+            <div class="carousel__opinions js-carousel-opinions">
+              <h3 class="carousel__header">Zygmunt</h3>
+              <p class="carousel__description">
+                Serdecznie polecam!!! Od 5 lat moje dzieci najpierw córka teraz
+                syn uczęszcza na zajęcia. Matura zdana na niemal 100 procent.
+              </p>
+              <p class="carousel__rating">
+                <img
+                  class="carousel__image"
+                  src="./images/star_full.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_empty.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_empty.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_empty.png"
+                  alt=""
+                />
+                <img
+                  class="carousel__image"
+                  src="./images/star_empty.png"
+                  alt=""
+                />
+              </p>
+            </div>
+          </div>
+          <button class="carousel__button js-carousel-next">
+            <img class="carousel__icon" src="./images/angle-right.svg" alt="" />
+          </button>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="contact__header">
+          Skontaktuj się z nami aby zapisać się na zajęcia z języka angielskiego
+        </h2>
+        <div class="contact__box">
+          <p class="contact__description">
+            Pierwsze zajęcia to lekcja próbna więc nic nie ryzykujesz. Zapisz
+            się już dziś!
+          </p>
+        </div>
+        <div class="contact__grid">
+          <div class="form__box">
+            <form method="post" class="form">
+              <p class="form__element">
+                <input
+                  class="form__input"
+                  id="firstName"
+                  type="text"
+                  placeholder="Jan"
+                  name="firstName"
+                  required
+                />
+                <label class="form__label" for="firstName">Imię</label>
+              </p>
+              <p class="form__element">
+                <input
+                  class="form__input"
+                  id="lastName"
+                  type="text"
+                  placeholder="Kowalski"
+                  name="lastName"
+                  required
+                />
+                <label class="form__label" for="lastName">Nazwisko</label>
+              </p>
+              <p class="form__element">
+                <input
+                  class="form__input"
+                  id="phoneNumber"
+                  type="tel"
+                  placeholder="+48100200300"
+                  name="phoneNumber"
+                  required
+                />
+                <label class="form__label" for="phoneNumber"
+                  >Numer telefonu</label
+                >
+              </p>
+              <p class="form__element">
+                <input
+                  class="form__input"
+                  id="emailAddress"
+                  type="email"
+                  placeholder="kontakt@kontakt.pl"
+                  name="emailAddress"
+                  required
+                />
+                <label class="form__label" for="emailAddress"
+                  >Adres email</label
+                >
+              </p>
+              <p class="form__element">
+                <textarea
+                  class="form__textarea"
+                  id="yourMessage"
+                  name="yourMessage"
+                  placeholder="Twoja wiadomość"
+                ></textarea>
+                <label class="form__label" for="yourMessage"
+                  >Twoja wiadomość</label
+                >
+              </p>
+              <p class="form__submit">
+                <input
+                  id="send"
+                  class="form__button"
+                  type="submit"
+                  name="send"
+                  value="Wyślij"
+                />
+              </p>
+            </form>
+          </div>
+          <div class="social">
+            <h3 class="social__header">
+              Skontaktuj się z nami telefonicznie lub odwiedz nasze social media
+            </h3>
+            <div class="social__box">
+              <img class="social__icon" src="./images/phone-call.svg" alt="" />
+              <p class="social__description">Telefon</p>
+            </div>
+            <a class="social__link" href="tel:+48000000000">+48 000 000 000</a>
+            <div class="social__box">
+              <img class="social__icon" src="./images/envelope.svg" alt="" />
+              <p class="social__description">Email</p>
+            </div>
+            <a class="social__link" href="mailto:kontakt@lingua-academy.pl"
+              >kontakt@lingua-academy.pl</a
+            >
+            <div class="social__box">
+              <img class="social__icon" src="./images/hastag.svg" alt="" />
+              <p class="social__description">Media społecznościowe</p>
+            </div>
+            <div class="social__link--box">
+              <a class="social__link" href="#"
+                ><img class="social__icon" src="./images/facebook.svg" alt=""
+              /></a>
+              <a class="social__link" href="#"
+                ><img class="social__icon" src="./images/instagram.svg" alt=""
+              /></a>
+              <a class="social__link" href="#"
+                ><img class="social__icon" src="./images/tik-tok.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer__box">
-            <img class="footer__image" src="./images/logo_lingua.png" alt="logo Lingua Academy">
+      <div class="footer__box">
+        <img
+          class="footer__image"
+          src="./images/logo_lingua.png"
+          alt="logo Lingua Academy"
+        />
+      </div>
+      <article class="footer__box">
+        <nav class="footer__nav">
+          <h2 class="footer__header">Menu</h2>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#about">O nas</a></li>
+            <li><a class="footer__link" href="#courses">Kursy</a></li>
+            <li><a class="footer__link" href="#opinions">Opinie</a></li>
+            <li><a class="footer__link" href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </article>
+      <article class="footer__box">
+        <div>
+          <h2 class="footer__header">Dane firmy</h2>
+          <p class="footer__description">
+            Lingua Academy sp. z o. o.<br />
+            NIP: 9442283910<br />
+            REGON: 526210078<br />
+            Słoneczna 15/13<br />
+            32-050 Skawina<br />
+          </p>
         </div>
-        <article class="footer__box">
-            <nav class="footer__nav">
-                <h2 class="footer__header">Menu</h2>
-                <ul class="footer__nav">
-                    <li><a class="footer__link" href="#about">O nas</a></li>
-                    <li><a class="footer__link" href="#courses">Kursy</a></li>
-                    <li><a class="footer__link" href="#opinions">Opinie</a></li>
-                    <li><a class="footer__link" href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-        </article>
-        <article class="footer__box">
-            <div>
-                <h2 class="footer__header">Dane firmy</h2>
-                <p class="footer__description">
-                Lingua Academy sp. z o. o.<br>
-                NIP: 9442283910<br>
-                REGON: 526210078<br>
-                Słoneczna 15/13<br>
-                32-050 Skawina<br>
-                </p>
-            </div>  
-        </article>
-        <article class="footer__box">
-            <div>
-                <h2 class="footer__header">Kontakt</h2>
-                <p class="footer__description">
-                    Justyna Ostrowska<br>
-                    <a class="footer__link" href="tel:+48000000000">+48 000 000 000</a><br>
-                    Kamil Czaja<br>
-                    <a class="footer__link" href="tel:+48000000000">+48 000 0000 000</a><br>
-                    <a class="footer__link" href="mailto:kontakt@lingua-academy.pl">kontakt@lingua-academy.pl</a><br>
-                </p>
-            </div>
-        </article>
+      </article>
+      <article class="footer__box">
+        <div>
+          <h2 class="footer__header">Kontakt</h2>
+          <p class="footer__description">
+            Justyna Ostrowska<br />
+            <a class="footer__link" href="tel:+48000000000">+48 000 000 000</a
+            ><br />
+            Kamil Czaja<br />
+            <a class="footer__link" href="tel:+48000000000">+48 000 0000 000</a
+            ><br />
+            <a class="footer__link" href="mailto:kontakt@lingua-academy.pl"
+              >kontakt@lingua-academy.pl</a
+            ><br />
+          </p>
+        </div>
+      </article>
     </footer>
     <script src="./main.js" type="module"></script>
-</body>
-
+  </body>
 </html>
