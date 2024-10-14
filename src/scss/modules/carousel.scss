@@ -8,14 +8,24 @@
     &__box {
         margin: 0 auto;
         position: relative;
-        width: $desktop;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        overflow: hidden;
-        flex-wrap: nowrap;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
+        display: grid;
+        align-items: center;
+        grid-auto-flow:column;  
+        overflow: hidden;
+        grid-template-columns: repeat(6, 98%);
+        gap: 2%;
+
+        @media (min-width: $tablet) {
+            grid-template-columns: repeat(3, 48% 48%);
+            gap: 4%;
+        }
+        
+        @media (min-width: $desktop) {
+            grid-template-columns: repeat(2, 32% 32% 32%);
+            gap: 2%;
+        }
     }
 
     &__button {
@@ -70,17 +80,13 @@
         scroll-snap-align: end;
         height: 320px;
         border-radius: 8px;
-        min-width: 94%;
-        margin: 3%;
-
+        min-width: 90%;
         @media (min-width: $tablet) {
-            min-width: 47%;
-            margin: 1.5%;
+            min-width: 45%;
         }
 
         @media (min-width: $desktop) {
-            min-width: 30.3%;
-            margin: 1.52%;
+            min-width: 30%;
         }
     }
     
