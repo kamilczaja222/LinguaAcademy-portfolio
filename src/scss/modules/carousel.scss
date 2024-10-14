@@ -1,100 +1,99 @@
 .carousel {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &__box {
+    margin: 0 auto;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    display: grid;
     align-items: center;
+    grid-auto-flow: column;
     overflow: hidden;
+    grid-template-columns: repeat(6, 98%);
+    gap: 2%;
 
-    &__box {
-        margin: 0 auto;
-        position: relative;
-        scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;
-        display: grid;
-        align-items: center;
-        grid-auto-flow:column;  
-        overflow: hidden;
-        grid-template-columns: repeat(6, 98%);
-        gap: 2%;
-
-        @media (min-width: $tablet) {
-            grid-template-columns: repeat(3, 48% 48%);
-            gap: 4%;
-        }
-        
-        @media (min-width: $desktop) {
-            grid-template-columns: repeat(2, 32% 32% 32%);
-            gap: 2%;
-        }
+    @media (min-width: $tablet) {
+      grid-template-columns: repeat(3, 48% 48%);
+      gap: 4%;
     }
 
-    &__button {
-        padding: 4px;
-        display: flex;
-        align-items: center;
-        border: 0;
-        background-color: transparent;
+    @media (min-width: $desktop) {
+      grid-template-columns: repeat(2, 32% 32% 32%);
+      gap: 2%;
+    }
+  }
 
-        &:disabled {
-            background-color: #cccccc;
-        }
+  &__button {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
 
-        @media (min-width: $tablet) {
-            padding: 8px;
-            height: 64px;
-        }
+    &:disabled {
+      background-color: #cccccc;
     }
 
-    &__icon {
-        height: 32px;
+    @media (min-width: $tablet) {
+      padding: 8px;
+      height: 64px;
+    }
+  }
 
-        @media (min-width: $desktop) {
-            height: 64px;
-        }
+  &__icon {
+    height: 32px;
+
+    @media (min-width: $desktop) {
+      height: 64px;
+    }
+  }
+
+  &__image {
+    height: 32px;
+    width: 32px;
+  }
+
+  &__header {
+    font-size: $heading4;
+    padding-bottom: 4px;
+    border-style: none none solid none;
+    border-color: $secondary;
+    border-bottom-width: 4px;
+    margin: 4px;
+  }
+
+  &__description {
+    font-size: $text3;
+    margin: 8px 4px;
+  }
+
+  &__opinions {
+    background-color: $white;
+    inset: 0;
+    margin-bottom: 16px;
+    padding: 16px;
+    scroll-snap-align: end;
+    height: 320px;
+    border-radius: 8px;
+    min-width: 90%;
+    @media (min-width: $tablet) {
+      min-width: 45%;
     }
 
-    &__image {
-        height: 32px;
-        width: 32px;
+    @media (min-width: $desktop) {
+      min-width: 30%;
     }
+  }
 
-    &__header {
-        font-size: $heading4;
-        padding-bottom: 4px;
-        border-style: none none solid none;
-        border-color: $secondary;
-        border-bottom-width: 4px;
-        margin: 4px;
-    }
-
-    &__description {
-        font-size: $text3;
-        margin: 8px 4px;
-    }
-
-    &__opinions {
-        background-color: $white;
-        inset: 0;
-        margin-bottom: 16px;
-        padding: 16px;
-        scroll-snap-align: end;
-        height: 320px;
-        border-radius: 8px;
-        min-width: 90%;
-        @media (min-width: $tablet) {
-            min-width: 45%;
-        }
-
-        @media (min-width: $desktop) {
-            min-width: 30%;
-        }
-    }
-    
-    &__rating {
-        position: absolute;
-        bottom: 16px;
-        display: flex;
-        column-gap: 4px;
-    }
+  &__rating {
+    position: absolute;
+    bottom: 16px;
+    display: flex;
+    column-gap: 4px;
+  }
 }
-

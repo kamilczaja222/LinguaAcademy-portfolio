@@ -1,107 +1,105 @@
 .form {
-    margin: 16px;
+  margin: 16px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 80%;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    font-size: $text2;
+    background-color: $secondary;
+    border-radius: 8px;
+    padding: 16px;
+    border-style: none;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+
+  &__input {
+    font-size: $text2;
+    display: block;
     width: 100%;
+    margin-top: 4px;
+    border-style: none none solid none;
+    border-width: 4px;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 4px;
 
-    @media (min-width: $tablet) {
-        width: 80%;
+    &::placeholder {
+      color: transparent;
     }
 
-    &__box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border-color: $primary;
+      transition: border-color 0.5s ease-in-out;
+
+      &::placeholder {
+        transition: color 0.5s ease-in-out;
+        color: $grey;
+      }
+    }
+  }
+
+  &__textarea {
+    font-size: $text2;
+    display: block;
+    height: 128px;
+    width: 100%;
+    margin-top: 8px;
+    border-style: none none solid none;
+    border-width: 4px;
+    border-radius: 0;
+
+    &::placeholder {
+      color: transparent;
     }
 
-    &__button {
-        font-size: $text2;
-        background-color: $secondary;
-        border-radius: 8px;
-        padding: 16px;
-        border-style: none;
-
-        &:hover {
-            transform: scale(1.05, 1.05);
-        }
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border-color: $primary;
+      transition: border-color 0.5s ease-in-out;
     }
+  }
+  &__element {
+    padding: 16px;
+    display: block;
 
-    &__input {
-        font-size: $text2;
-        display: block;
-        width: 100%;
-        margin-top: 4px;
-        border-style: none none solid none;
-        border-width: 4px;
-        border-radius: 0;
-        box-shadow: none;
-        padding: 4px;
-
-        &::placeholder {
-            color: transparent;
-        }
-
-        &:focus {
-            box-shadow: none;
-            outline: none;
-            border-color: $primary;
-            transition: border-color 0.5s ease-in-out;
-
-            &::placeholder {
-                transition: color 0.5s ease-in-out;
-                color: $grey;
-            }
-        }
+    &:focus {
+      transform: translateY(0);
     }
-    
-    &__textarea {
-        font-size: $text2;
-        display: block;
-        height: 128px;
-        width: 100%;
-        margin-top: 8px;
-        border-style: none none solid none;
-        border-width: 4px;
-        border-radius: 0;
+  }
 
-        &::placeholder {
-            color: transparent;
-        }
+  &__submit {
+    padding: 16px;
+  }
 
-        &:focus {
-            box-shadow: none;
-            outline: none;
-            border-color: $primary;
-            transition: border-color 0.5s ease-in-out;
-        }
-    }
-    &__element {
-        padding: 16px;
-        display: block;
-
-        &:focus {
-            transform: translateY(0);
-        }
-    }
-
-    &__submit {
-        padding: 16px;
-    }
-
-    &__label {
-        font-size: $text2;
-        transition: all 0.5s ease-in-out;
-        transform: translateY(32px);
-        position: relative;
-        transition: all 0.5s ease-in-out;
-        top: -36px;
-    }
-
+  &__label {
+    font-size: $text2;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(32px);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    top: -36px;
+  }
 }
 
 .form__input:focus + label {
-    top: -64px;
+  top: -64px;
 }
 
 .form__textarea:focus + label {
-    top: -166px;
+  top: -166px;
 }
-

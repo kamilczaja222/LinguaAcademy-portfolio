@@ -1,63 +1,63 @@
 .footer {
-    background-color: $secondary;
-    min-height: 256px;
-    width: 100%;
-    display: block;
-    padding: 16px;
+  background-color: $secondary;
+  min-height: 256px;
+  width: 100%;
+  display: block;
+  padding: 16px;
 
-    @media (min-width: $tablet) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header {
+    font-size: $text2;
+    margin: 8px 0;
 
     @media (min-width: $desktop) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+      font-size: $text1;
     }
+  }
 
-    &__box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  &__nav {
+    list-style-type: none;
+    padding: 0;
+    visibility: hidden;
+    height: 0;
+
+    @media (min-width: $desktop) {
+      visibility: visible;
+      height: auto;
     }
+  }
 
-    &__header {
-        font-size: $text2;
-        margin: 8px 0;
+  &__link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: $black;
+    transition: color 0.5s ease-in-out;
 
-        @media (min-width: $desktop) {
-            font-size: $text1;
-        }
+    &:hover {
+      color: $white;
     }
+  }
 
-    &__nav {
-        list-style-type: none;
-        padding: 0;
-        visibility: hidden;
-        height: 0;
-        
-        @media (min-width: $desktop) {
-            visibility: visible;
-            height: auto
-        }
-    }
+  &__description {
+    font-size: 1rem;
+  }
 
-    &__link {
-        font-size: 1rem;
-        text-decoration: none;
-        color: $black;
-        transition: color 0.5s ease-in-out;
-
-        &:hover {
-            color: $white;
-        }
-    }
-
-    &__description {
-        font-size: 1rem;
-    }
-
-    &__image {
-        max-width: 100%;
-    }
+  &__image {
+    max-width: 100%;
+  }
 }
