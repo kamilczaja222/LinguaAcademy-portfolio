@@ -22,7 +22,7 @@ function checkScreen() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
   screenSize = parseInt(screenBox.offsetWidth);
   checkScreen(screenSize);
 });
